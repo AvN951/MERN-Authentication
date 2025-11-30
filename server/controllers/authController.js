@@ -92,9 +92,9 @@ export const logout = async (req,res)=>{
 
 export const sendVerifyOtp= async (req,res)=>{
     try {
-        const {userId} = req.body;
+        const userId = req.userId;
 
-        const user = await userModel.findById({userId})
+        const user = await userModel.findById(userId)
 
         if(user.isAccountVerified){
             return res.json({success:false,message:"Account already verified"})
@@ -124,13 +124,14 @@ export const sendVerifyOtp= async (req,res)=>{
 
 export const verifyEmail= async (req,res)=>{
     try {
-        const {userId, otp} = req.body;
+        const {otp} = req.body;
+        const userId = req.userId;
 
         if(!userId || !otp){
             return res.json({success:false,message:"Missing Details"});
         }
 
-        const user = await user.findById(userId);
+        const user = await userModel.findById(userId);
 
         if(!userId){
             return res.json({success:false,message:"User Not Found"});
@@ -152,6 +153,14 @@ export const verifyEmail= async (req,res)=>{
 
         return res.json({success:true,message:"Email Verified Successfully"});
 
+    } catch (error) {
+        return res.json({ success: false, message: error.message });
+    }
+}
+
+export const isAuthenticated = async (req,res)=>{
+    try {
+         return res.json({success:true})
     } catch (error) {
         return res.json({ success: false, message: error.message });
     }
