@@ -17,8 +17,8 @@ export const register = async (req, res) => {
             return res.json({ success: false, message: "User Already Exists" });
         }
 
-        const hashedpassword = await bcrypt.hash(password,10);
-        const user = new userModel({ name, email, password: hashedpassword });
+        const hashedPassword = await bcrypt.hash(password,10);
+        const user = new userModel({ name, email, password: hashedPassword });
         await user.save();
 
         const token = jwt.sign({id: user._id}, process.env.JWT_SECRET, {expiresIn: '7d'});
@@ -161,6 +161,73 @@ export const verifyEmail= async (req,res)=>{
 export const isAuthenticated = async (req,res)=>{
     try {
          return res.json({success:true})
+    } catch (error) {
+        return res.json({ success: false, message: error.message });
+    }
+}
+
+export const sendResetOtp = async (req,res)=>{
+
+    const {email} = req.body;
+
+    if(!email){
+        return res.json({ success: false, message: "Email is Required" });
+    }
+    try {
+        const user = await userModel.findOne({email});
+        if(!user){
+            return res.json({ success: false, message: "User Not Found" });
+        }
+
+        const otp = String(Math.floor(100000 + Math.random() * 900000));
+
+        user.resetOtp = otp;
+        user.resetOtpExpiresAt = Date.now() + 15 * 60  *1000;
+
+        await user.save();
+
+        const mailOptions = {
+            from: process.env.SENDER_EMAIL,
+            to: user.email,
+            subject: "Password Reset OTP",
+            text: `Your OTP for resetting your password is ${otp}, Reset your Password using this OTP`
+        }
+
+        await transporter.sendMail(mailOptions);
+
+        res.json({success:true,message:"Verification OTP Sent"})
+    } catch (error) {
+        return res.json({ success: false, message: error.message });
+    }
+}
+
+export const resetPassword = async (req,res)=>{
+    const {email,otp,newPassword} = req.body;
+    if(!email ||!otp || !newPassword ){
+        return res.json({ success: false, message:"Email, OTP and new password are required"});
+    }
+    try {
+        const user = await userModel.findOne({email});
+        
+        if(!user){
+            return res.json({ success: false, message:"User Not Found"});
+        }
+
+        if(user.resetOtp === "" || user.resetOtp !== otp){
+            return res.json({ success: false, message:"Invalid OTP"});
+        }
+
+        if(user.resetOtpExpiresAt < Date.now()){
+            return res.json({ success: false, message:"OTP Expired"});
+        }
+
+        const hashedPassword = await bcrypt.hash(newPassword,10);
+        user.password = hashedPassword;
+        user.resetOtp = '';
+        user.resetOtpExpiresAt = 0;
+        await user.save();
+
+        return res.json({ success: true, message:"Password has been resetted successfully"});
     } catch (error) {
         return res.json({ success: false, message: error.message });
     }
