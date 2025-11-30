@@ -38,7 +38,7 @@ export const register = async (req, res) => {
 
         await transporter.sendMail(mailOptions);
 
-        return res.json({success:true})
+        res.json({success:true})
     } catch (error) {
         res.json({ success: false, message: error.message });
     }
@@ -70,7 +70,7 @@ export const login = async (req, res) => {
             maxAge: 7*24*60*60*1000
         });
 
-        return res.json({success:true})
+        res.json({success:true})
     } catch (error) {
         return res.json({ success: false, message: error.message });
     }
@@ -84,7 +84,7 @@ export const logout = async (req,res)=>{
             sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'strict',
             maxAge: 7*24*60*60*1000
         });
-        return res.json({success:true, message:"Logged Out"})
+        res.json({success:true, message:"Logged Out"})
     } catch (error) {
         return res.json({ success: false, message: error.message });
     }
@@ -151,7 +151,7 @@ export const verifyEmail= async (req,res)=>{
 
         await user.save()
 
-        return res.json({success:true,message:"Email Verified Successfully"});
+        res.json({success:true,message:"Email Verified Successfully"});
 
     } catch (error) {
         return res.json({ success: false, message: error.message });
@@ -160,7 +160,7 @@ export const verifyEmail= async (req,res)=>{
 
 export const isAuthenticated = async (req,res)=>{
     try {
-         return res.json({success:true})
+        res.json({success:true})
     } catch (error) {
         return res.json({ success: false, message: error.message });
     }
@@ -227,7 +227,7 @@ export const resetPassword = async (req,res)=>{
         user.resetOtpExpiresAt = 0;
         await user.save();
 
-        return res.json({ success: true, message:"Password has been resetted successfully"});
+        res.json({ success: true, message:"Password has been resetted successfully"});
     } catch (error) {
         return res.json({ success: false, message: error.message });
     }
