@@ -42,7 +42,7 @@ const ResetPassword = () => {
     })
   }
 
-  const onSumbitEmail = async (e) => {
+  const onSubmitEmail = async (e) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(backendUrl + '/api/auth/send-reset-otp', {email});
@@ -80,7 +80,7 @@ const ResetPassword = () => {
         className="absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer"
       />
 {!isEmailSent && 
-      <form onSubmit={onSumbitEmail} className="bg-slate-900 p-8 rounded-lg shadow-lg w-96 text-sm">
+      <form onSubmit={onSubmitEmail} className="bg-slate-900 p-8 rounded-lg shadow-lg w-96 text-sm">
         <h1 className="text-white text-2xl font-semibold text-center mb-4">
           Reset Password
         </h1>
