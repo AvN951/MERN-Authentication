@@ -1,0 +1,21 @@
+{
+  "name": "mern-authentication",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvN951/MERN-Authentication.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AvN951/MERN-Authentication/issues"
+  },
+  "homepage": "https://github.com/AvN951/MERN-Authentication#readme"
+}
