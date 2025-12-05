@@ -1,6 +1,3 @@
-Below is a **fully polished, copy-paste-ready `README.md`** for your **MERN-Authentication** project.
-Includes headings, emojis, formatting, and a **screenshots section you can fill later**.
-
 ---
 
 # 🔐 MERN Authentication
