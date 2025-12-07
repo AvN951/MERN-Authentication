@@ -39,7 +39,7 @@ export const register = async (req, res) => {
         };
         await transporter.sendMail(mailOptions);
 
-        res.json({ success: true })
+        res.json({ success: true , message: "User Registered Successfully" });
     } catch (error) {
         res.json({ success: false, message: error.message });
     }
