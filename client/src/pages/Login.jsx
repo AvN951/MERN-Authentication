@@ -36,6 +36,7 @@ const Login = () => {
                 const {data} = await axios.post(backendUrl+'/api/auth/login', {email,password})
 
                 if(data.success){
+                    toast.success(data.message);
                     setIsLoggedIn(true);
                     getUserData();
                     navigate('/');
