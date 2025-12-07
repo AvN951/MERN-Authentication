@@ -108,6 +108,21 @@ export const EMAIL_VERIFY_TEMPLATE = `
 
 `
 
+export const WELCOME_TEMPLATE = `
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <h2>Welcome to AvN Website 🎉</h2>
+  <p>Your account has been created with email: <strong>{{email}}</strong></p>
+  <p>You can now log in and explore the app.</p>
+</body>
+</html>
+`
+
 export const PASSWORD_RESET_TEMPLATE = `
 
 <!DOCTYPE html>
