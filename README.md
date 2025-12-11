@@ -116,7 +116,7 @@ npm start
 ```
 
 Now open your browser and visit:
-👉 **[http://localhost:3000](http://localhost:3000)**
+👉 **[http://localhost:5000](http://localhost:5000)**
 
 ---
 
@@ -133,24 +133,23 @@ Now open your browser and visit:
 
 ## 📸 Screenshots
 
-*(Add your images here — login page, signup page, dashboard, etc.)*
+<img width="1366" height="768" alt="Screenshot 2025-12-04 215230" src="https://github.com/user-attachments/assets/6fec4755-02f3-4f8b-8f84-42e4b83782b5" />
+<img width="1366" height="768" alt="Screenshot 2025-12-04 215534" src="https://github.com/user-attachments/assets/4cbab71b-3e57-4e3d-bd84-e50b4d2987e8" />
+<img width="1366" height="768" alt="Screenshot 2025-12-05 235420" src="https://github.com/user-attachments/assets/dbba4b01-6ab0-4e33-827b-184ec60c52ae" />
+<img width="1366" height="768" alt="Screenshot 2025-12-05 235428" src="https://github.com/user-attachments/assets/13086fd8-e7c4-44df-848a-d72afdffb035" />
+<img width="1365" height="767" alt="Screenshot 2025-12-07 153142" src="https://github.com/user-attachments/assets/472529fc-91fa-49ca-b5e3-71c47a9f8e86" />
+<img width="1365" height="767" alt="Screenshot 2025-12-07 153242" src="https://github.com/user-attachments/assets/ad30d71f-574c-472a-befc-88bf0a5481ea" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153255" src="https://github.com/user-attachments/assets/301fb9ef-b5c4-4c49-bc90-3bf6a2dbedaa" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153304" src="https://github.com/user-attachments/assets/dd750d2d-0569-4431-9398-1d3db6d1497f" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153330" src="https://github.com/user-attachments/assets/a21430ae-c1c8-4763-b2d6-268eca25ea05" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153348" src="https://github.com/user-attachments/assets/09c59ef8-502a-4a9e-a6bc-db65d67e6bd0" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153355" src="https://github.com/user-attachments/assets/915dc375-6c9b-4fd6-8dd8-4decd78152f1" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153410" src="https://github.com/user-attachments/assets/bf844c39-57cf-4c64-b79d-78d564997422" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153427" src="https://github.com/user-attachments/assets/af732b7e-1400-4a0f-ae01-5539de3d6f83" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153444" src="https://github.com/user-attachments/assets/c04a3404-f068-4421-945d-9ade15ba9f76" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153500" src="https://github.com/user-attachments/assets/6e3c3370-cd81-4caf-8536-76d14bd6ba17" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153514" src="https://github.com/user-attachments/assets/0f11bf9f-114e-43a7-b11b-88fe1d45455e" />
 
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153355" src="https://github.com/user-attachments/assets/d3550580-9da4-4076-a698-e636be632718" />
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153348" src="https://github.com/user-attachments/assets/8a973761-9782-4ad6-a78a-7f6d4223e467" />
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153330" src="https://github.com/user-attachments/assets/4625027f-e38a-4843-95e4-41895adda9fa" />
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153304" src="https://github.com/user-attachments/assets/35ff99bc-cc9a-4776-8707-777caff0079f" />
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153255" src="https://github.com/user-attachments/assets/ea831d37-6b4a-407d-b974-02c9b060dfb3" />
-<img width="1365" height="767" alt="Screenshot 2025-12-07 153242" src="https://github.com/user-attachments/assets/1a76f06b-0faa-4d2f-b226-a30039ae0c62" />
-<img width="1365" height="767" alt="Screenshot 2025-12-07 153142" src="https://github.com/user-attachments/assets/0dafa861-2f85-4409-a371-6e17d9bf1e15" />
-<img width="1366" height="768" alt="Screenshot 2025-12-05 235428" src="https://github.com/user-attachments/assets/7ca68bc0-ac43-4529-a918-17c71c62b6b6" />
-<img width="1366" height="768" alt="Screenshot 2025-12-05 235420" src="https://github.com/user-attachments/assets/5d34b12e-9a87-4ebc-8473-21446fe5e423" />
-<img width="1366" height="768" alt="Screenshot 2025-12-04 215534" src="https://github.com/user-attachments/assets/cb84c620-4942-4698-a653-9e088f37a3a3" />
-<img width="1366" height="768" alt="Screenshot 2025-12-04 215230" src="https://github.com/user-attachments/assets/3bd925c7-b658-408e-8a3d-9f651545e1c7" />
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153514" src="https://github.com/user-attachments/assets/2f3ef98f-fd79-4cd2-8d13-7440bd2dc425" />
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153500" src="https://github.com/user-attachments/assets/6c7eeeab-7456-4621-8b17-2f1545803e8b" />
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153444" src="https://github.com/user-attachments/assets/ab019f83-1c2b-46ac-b412-e8f4c711d83f" />
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153427" src="https://github.com/user-attachments/assets/e9c53257-fad4-4b3d-b282-4c5701044264" />
-<img width="1366" height="768" alt="Screenshot 2025-12-07 153410" src="https://github.com/user-attachments/assets/76d134d6-535e-4989-970a-f14ccbe625f3" />
 
 ---
 
@@ -166,5 +165,3 @@ If you want new features like OAuth, admin panel, etc., feel free to open an iss
 This project is licensed under the **MIT License**.
 
 ---
-
-If you'd like, I can also generate a **professional README badge section**, API documentation, or **a logo banner** for your repo.
