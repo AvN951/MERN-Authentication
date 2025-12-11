@@ -131,40 +131,26 @@ Now open your browser and visit:
 
 ---
 
-## 🚀 Extend This Project
-
-You can add more features on top of this base:
-
-🟦 Email Verification
-🟧 Password Reset via Email
-🟥 Google / GitHub OAuth
-🟩 Refresh Token + Access Token System
-🟪 Admin / User Roles
-🟨 Account Lock After Failed Login Attempts
-
----
-
 ## 📸 Screenshots
 
 *(Add your images here — login page, signup page, dashboard, etc.)*
 
-### 🔐 Login Page
-
-```
-(Add Screenshot)
-```
-
-### 📝 Signup Page
-
-```
-(Add Screenshot)
-```
-
-### 🏠 Protected Dashboard
-
-```
-(Add Screenshot)
-```
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153355" src="https://github.com/user-attachments/assets/d3550580-9da4-4076-a698-e636be632718" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153348" src="https://github.com/user-attachments/assets/8a973761-9782-4ad6-a78a-7f6d4223e467" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153330" src="https://github.com/user-attachments/assets/4625027f-e38a-4843-95e4-41895adda9fa" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153304" src="https://github.com/user-attachments/assets/35ff99bc-cc9a-4776-8707-777caff0079f" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153255" src="https://github.com/user-attachments/assets/ea831d37-6b4a-407d-b974-02c9b060dfb3" />
+<img width="1365" height="767" alt="Screenshot 2025-12-07 153242" src="https://github.com/user-attachments/assets/1a76f06b-0faa-4d2f-b226-a30039ae0c62" />
+<img width="1365" height="767" alt="Screenshot 2025-12-07 153142" src="https://github.com/user-attachments/assets/0dafa861-2f85-4409-a371-6e17d9bf1e15" />
+<img width="1366" height="768" alt="Screenshot 2025-12-05 235428" src="https://github.com/user-attachments/assets/7ca68bc0-ac43-4529-a918-17c71c62b6b6" />
+<img width="1366" height="768" alt="Screenshot 2025-12-05 235420" src="https://github.com/user-attachments/assets/5d34b12e-9a87-4ebc-8473-21446fe5e423" />
+<img width="1366" height="768" alt="Screenshot 2025-12-04 215534" src="https://github.com/user-attachments/assets/cb84c620-4942-4698-a653-9e088f37a3a3" />
+<img width="1366" height="768" alt="Screenshot 2025-12-04 215230" src="https://github.com/user-attachments/assets/3bd925c7-b658-408e-8a3d-9f651545e1c7" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153514" src="https://github.com/user-attachments/assets/2f3ef98f-fd79-4cd2-8d13-7440bd2dc425" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153500" src="https://github.com/user-attachments/assets/6c7eeeab-7456-4621-8b17-2f1545803e8b" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153444" src="https://github.com/user-attachments/assets/ab019f83-1c2b-46ac-b412-e8f4c711d83f" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153427" src="https://github.com/user-attachments/assets/e9c53257-fad4-4b3d-b282-4c5701044264" />
+<img width="1366" height="768" alt="Screenshot 2025-12-07 153410" src="https://github.com/user-attachments/assets/76d134d6-535e-4989-970a-f14ccbe625f3" />
 
 ---
 
