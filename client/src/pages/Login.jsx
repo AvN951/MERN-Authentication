@@ -16,7 +16,7 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const onSumbitHandler = async (e)=>{
+    const onSubmitHandler = async (e)=>{
         try {
             e.preventDefault();
 
@@ -36,6 +36,7 @@ const Login = () => {
                 const {data} = await axios.post(backendUrl+'/api/auth/login', {email,password})
 
                 if(data.success){
+                    toast.success(data.message);
                     setIsLoggedIn(true);
                     getUserData();
                     navigate('/');
@@ -57,7 +58,7 @@ const Login = () => {
 
             <p className='text-center text-sm mb-6'>{state ==='Sign Up' ? 'Create your Account' : 'Login to your account!' }</p>
 
-            <form onSubmit={onSumbitHandler}>
+            <form onSubmit={onSubmitHandler}>
                 {state === 'Sign Up' && (
                     <div className='mb-4 flex items-center gap-3 w-full px-5 py-2.5 rounded-full bg-[#333A5C]'>
                         <img src={assets.person_icon} alt="" />
